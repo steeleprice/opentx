@@ -1,17 +1,14 @@
 sudo: required
-dist: xenial
+dist: bionic
 language: cpp
 compiler: gcc
-
-python:
-  - "3.8"
 
 addons:
   apt:
     sources:
       - sourceline: 'ppa:ubuntu-sdk-team/ppa'
       - sourceline: 'ppa:ubuntu-toolchain-r/test'
-      - sourceline: 'ppa:beineri/opt-qt571-xenial'
+      - sourceline: 'ppa:beineri/opt-qt571-bionic'
     update: true
     packages:
       - curl
