@@ -3,6 +3,9 @@ dist: xenial
 language: cpp
 compiler: gcc
 
+python:
+  - "3.8"
+
 addons:
   apt:
     sources:
