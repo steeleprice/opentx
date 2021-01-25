@@ -1,5 +1,5 @@
 sudo: required
-dist: bionic
+dist: xenial
 language: cpp
 compiler: gcc
 
@@ -8,7 +8,7 @@ addons:
     sources:
       - sourceline: 'ppa:ubuntu-sdk-team/ppa'
       - sourceline: 'ppa:ubuntu-toolchain-r/test'
-#      - sourceline: 'ppa:beineri/opt-qt571-bionic'
+      - sourceline: 'ppa:beineri/opt-qt571-xenial'
     update: true
     packages:
       - curl
@@ -20,7 +20,7 @@ addons:
       - python3-pip
 
 env:
-  global:
+    - PATH=/opt/python/3.7.1/bin:$PATH
     - QT_BASE=57
     - GCC_ARM_VERSION=4_7-2013q3
   matrix:
